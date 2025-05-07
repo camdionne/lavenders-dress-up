@@ -1,0 +1,77 @@
+/* Reset body and center content */
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #e6e6fa; /* pastel lavender */
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Background widget box */
+  #background {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    position: relative;
+    z-index: 0;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Cat Container centered on background */
+  .cat-container {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 52%; /* Adjusted to move the cat to the right */
+    transform: translate(-50%, -60%);
+  }
+  /* All cat layers stacked perfectly */
+  .cat-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Z-index layering */
+  #lavender {
+    z-index: 1;
+  }
+  
+  #clothes-layer {
+    z-index: 2;
+  }
+  
+  #hat-layer {
+    z-index: 3;
+  }
+  
+  /* Button styles */
+  .controls {
+    margin-top: 40px;
+    font-family: 'Press Start 2P', cursive;
+    color: #6a5acd;
+  }
+  
+  .controls button {
+    border: 2px solid #e6e6fa;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #6a5acd;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #e6e6fa;
+  }
+  

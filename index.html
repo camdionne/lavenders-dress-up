@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lavender's Dress Up</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body onclick="startMusic()">
+  
+  <!-- Background Image -->
+  <img id="background" src="assets/bg-room.png" alt="Room Background" />
+
+  <!-- Cat Base and Outfit Layers -->
+  <div class="cat-container">
+    <img id="lavender" src="assets/lavender-base.png" alt="Lavender the Cat" />
+    <img id="clothes-layer" />
+    <img id="hat-layer" />
+ 
+    
+  </div>
+  
+  <!-- Dress-up Controls -->
+  <div class="controls">
+    <button onclick="changeItem('hat-layer', 'hat1.png')">Hat 1</button>
+    <button onclick="changeItem('hat-layer', 'hat2.png')">Hat 2</button>
+    <button onclick="removeItem('hat-layer')">No Hat</button>
+    <br />
+    <button onclick="changeItem('clothes-layer', 'dress1.png')">Dress 1</button>
+    <button onclick="changeItem('clothes-layer', 'dress2.png')">Dress 2</button>
+    <button onclick="removeItem('clothes-layer')">No Dress</button>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="assets/bg-music.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
